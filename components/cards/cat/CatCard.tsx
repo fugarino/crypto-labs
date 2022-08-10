@@ -7,7 +7,7 @@ export interface ICatCard {
 const BaseTemplate: React.FC<ICatCard> = ({ name, age, appointmentBooked }) => {
   return (
     <section style={{ backgroundColor: "red" }}>
-      <h1>{name}</h1>
+      <h1 className="bg-blue-500">{name}</h1>
       <h3>{age}</h3>
       <p>
         {appointmentBooked
