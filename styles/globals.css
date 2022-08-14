@@ -3,7 +3,31 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-primary {
-    @apply border-0 p-2 px-6 bg-slate-100 rounded-md;
+  .page {
+    @apply relative overflow-y-scroll mt-14 ml-14 w-[calc(100vw-3.5rem)] h-[calc(100vh-3.25rem)] p-10 pb-20 bg-darkGray-200;
   }
+
+  .menuIcon {
+    @apply h-5 w-5 text-gray-500;
+  }
+  .menuIconAlt {
+    @apply stroke-gray-500 fill-gray-500;
+  }
+  .menuIconAlt1 {
+    @apply stroke-gray-500;
+  }
+
+  a:hover .menuIcon {
+    @apply h-5 w-5 text-black;
+  }
+  a:hover .menuIconAlt {
+    @apply stroke-black fill-black;
+  }
+  a:hover .menuIconAlt1 {
+    @apply stroke-black;
+  }
+}
+
+body {
+  overflow: hidden;
 }

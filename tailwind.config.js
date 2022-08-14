@@ -19,12 +19,21 @@ module.exports = {
     },
     extend: {
       colors: {
-        blue: {
-          500: "#1a73e8",
+        gray: {
+          100: "#E0E0E0",
+        },
+        darkGray: {
+          200: "#F4F4F4",
+        },
+        menuIcon: {
+          100: "#797979",
         },
       },
       spacing: {
         128: "32rem",
+      },
+      height: {
+        100: "34rem",
       },
     },
   },
