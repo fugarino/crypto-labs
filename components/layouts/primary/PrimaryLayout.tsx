@@ -1,27 +1,18 @@
 import Head from "next/head";
-import Footer from "../../navigation/footer/Footer";
-import Header from "../../navigation/header/Header";
+import Nav from "../../navigation/nav/Nav";
 
 export interface IPrimaryLayout {
   children: React.ReactNode;
-  justify?: "items-center" | "items-start";
 }
 
-const PrimaryLayout: React.FC<IPrimaryLayout> = ({
-  children,
-  justify = "items-center",
-}) => {
+const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
   return (
     <>
       <Head>
         <title>NextJs App</title>
       </Head>
-      <div className={`min-h-screen flex flex-col ${justify}`}>
-        <Header />
-        <main className="px-5">{children}</main>
-        <div className="m-auto"></div>
-        <Footer />
-      </div>
+      <Nav />
+      <main className="page">{children}</main>
     </>
   );
 };

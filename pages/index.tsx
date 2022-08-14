@@ -1,21 +1,15 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
 import PrimaryLayout from "../components/layouts/primary/PrimaryLayout";
-import Search from "../components/utitity/search/Search";
 import { NextPageWithLayout } from "./page";
 
 const Home: NextPageWithLayout = () => {
-  const { locale } = useRouter();
-
   return (
-    <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-      logo
-      <Search />
-      <p>Google offered in: </p>
-      <Link href="/" locale={locale === "en" ? "fr" : "en"}>
-        <a className="underline text-blue-600">Francais</a>
-      </Link>
-    </section>
+    <>
+      <section className="w-full h-100 bg-white rounded-2xl shadow-md"></section>
+      <div className="w-full h-56 mt-10 space-x-10 flex justify-between">
+        <section className="bg-white w-full h-64 rounded-2xl shadow-md"></section>
+        <section className="bg-white w-full h-64 rounded-2xl shadow-md"></section>
+      </div>
+    </>
   );
 };
 
