@@ -25,7 +25,7 @@ const SideNavbar: React.FC<ISideNavbar> = () => {
           <MenuButton href="/">
             <HomeIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/coins">
+          <MenuButton href="/cryptocurrencies">
             <svg
               width="30"
               height="14"
