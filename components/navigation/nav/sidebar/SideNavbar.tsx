@@ -22,10 +22,10 @@ const SideNavbar: React.FC<ISideNavbar> = () => {
           </a>
         </Link>
         <ul className="mt-20 space-y-12 flex flex-col items-center">
-          <MenuButton href="/">
+          <MenuButton href="/" name="Home">
             <HomeIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/cryptocurrencies">
+          <MenuButton href="/cryptocurrencies" name="Cryptocurrencies">
             <svg
               width="30"
               height="14"
@@ -51,23 +51,23 @@ const SideNavbar: React.FC<ISideNavbar> = () => {
               />
             </svg>
           </MenuButton>
-          <MenuButton href="/discussions">
+          <MenuButton href="/discussions" name="Discussions">
             <ChatAlt2Icon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/favorites">
+          <MenuButton href="/favorites" name="Favorites">
             <BookmarkIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/notifications">
+          <MenuButton href="/notifications" name="Notifications">
             <BellIcon className="menuIcon" />
           </MenuButton>
         </ul>
       </div>
       <div>
         <ul className="space-y-10 mt-12">
-          <MenuButton href="/help">
+          <MenuButton href="/help" name="Help">
             <InformationCircleIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/settings">
+          <MenuButton href="/settings" name="Settings">
             <CogIcon className="menuIcon" />
           </MenuButton>
         </ul>

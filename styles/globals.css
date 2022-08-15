@@ -4,7 +4,11 @@
 
 @layer components {
   .page {
-    @apply relative overflow-y-scroll mt-14 ml-14 w-[calc(100vw-3.5rem)] h-[calc(100vh-3.25rem)] p-10 pb-20 bg-darkGray-200;
+    @apply relative -z-10 overflow-y-scroll mt-14 ml-14 w-[calc(100vw-3.5rem)] h-[calc(100vh-3.25rem)] p-10 pb-20 bg-darkGray-200;
+  }
+
+  .active {
+    @apply bg-gray-200;
   }
 
   .menuIcon {
@@ -24,6 +28,16 @@
     @apply stroke-black fill-black;
   }
   a:hover .menuIconAlt1 {
+    @apply stroke-black;
+  }
+
+  .active .menuIcon {
+    @apply h-5 w-5 text-black;
+  }
+  .active .menuIconAlt {
+    @apply stroke-black fill-black;
+  }
+  .active .menuIconAlt1 {
     @apply stroke-black;
   }
 }
