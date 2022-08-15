@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .page {
-    @apply relative -z-10 overflow-y-scroll mt-14 ml-14 w-[calc(100vw-3.5rem)] h-[calc(100vh-3.25rem)] p-10 pb-20 bg-darkGray-200;
-  }
-
   .active {
     @apply bg-gray-200;
   }

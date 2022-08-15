@@ -12,7 +12,9 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
         <title>NextJs App</title>
       </Head>
       <Nav />
-      <main className="page">{children}</main>
+      <main className="relative -z-10 overflow-y-scroll mt-14 ml-14 w-[calc(100vw-3.5rem)] h-[calc(100vh-3.25rem)] p-10 pb-20 bg-darkGray-200">
+        {children}
+      </main>
     </>
   );
 };
