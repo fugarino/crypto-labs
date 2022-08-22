@@ -2,9 +2,9 @@ import {
   BellIcon,
   BookmarkIcon,
   ChatAlt2Icon,
-  CogIcon,
   HomeIcon,
-  InformationCircleIcon,
+  LoginIcon,
+  QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,10 +22,14 @@ const SideNavbar: React.FC<ISideNavbar> = () => {
           </a>
         </Link>
         <ul className="mt-20 space-y-12 flex flex-col items-center">
-          <MenuButton href="/" name="Home">
+          <MenuButton pageLink={true} href="/" name="Home">
             <HomeIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/cryptocurrencies" name="Cryptocurrencies">
+          <MenuButton
+            pageLink={true}
+            href="/cryptocurrencies"
+            name="Cryptocurrencies"
+          >
             <svg
               width="30"
               height="14"
@@ -51,24 +55,28 @@ const SideNavbar: React.FC<ISideNavbar> = () => {
               />
             </svg>
           </MenuButton>
-          <MenuButton href="/discussions" name="Discussions">
+          <MenuButton pageLink={true} href="/discussions" name="Discussions">
             <ChatAlt2Icon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/favorites" name="Favorites">
+          <MenuButton pageLink={true} href="/favorites" name="Favorites">
             <BookmarkIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/notifications" name="Notifications">
+          <MenuButton
+            pageLink={true}
+            href="/notifications"
+            name="Notifications"
+          >
             <BellIcon className="menuIcon" />
           </MenuButton>
         </ul>
       </div>
       <div>
         <ul className="space-y-10 mt-12">
-          <MenuButton href="/help" name="Help">
-            <InformationCircleIcon className="menuIcon" />
+          <MenuButton pageLink={true} href="/help" name="Help">
+            <QuestionMarkCircleIcon className="menuIcon" />
           </MenuButton>
-          <MenuButton href="/settings" name="Settings">
-            <CogIcon className="menuIcon" />
+          <MenuButton pageLink={false} name="Sign in">
+            <LoginIcon className="menuIcon" />
           </MenuButton>
         </ul>
       </div>
