@@ -6,7 +6,7 @@ export interface IMenuButton {
   href?: string;
   children: ReactNode;
   name: string;
-  pageLink: boolean;
+  pageLink?: boolean;
 }
 
 const MenuButton: React.FC<IMenuButton> = ({
